@@ -4,6 +4,7 @@
     "project_name": "Python single-file script",
     "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_')}}",
     "project_short_description": "Python single-file boilerplate.",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3"]
 }
   
