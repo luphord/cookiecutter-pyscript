@@ -1,0 +1,9 @@
+{
+    "full_name": "luphord",
+    "email": "luphord@protonmail.com",
+    "project_name": "Python single-file script",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_')}}",
+    "project_short_description": "Python single-file boilerplate.",
+    "version": "0.1.0"
+}
+  
