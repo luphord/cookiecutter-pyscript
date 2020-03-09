@@ -35,6 +35,8 @@ def main() -> None:
     args = parser.parse_args()
     if args.version:
         print('''{{cookiecutter.project_name}} ''' + __version__)
+    elif hasattr(args, 'func'):
+        args.func(args)
 
 
 if __name__ == '__main__':
