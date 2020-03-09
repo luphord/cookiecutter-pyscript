@@ -21,10 +21,13 @@ subparsers = parser.add_subparsers(title='subcommands', dest='subcommand',
                                    help='Available subcommands')
 
 mycmd_parser = subparsers.add_parser('mycmd', help='An example subcommand')
+mycmd_parser.add_argument('-n', '--number',
+                          help='some number',
+                          default=17, type=int)
 
 
 def _mycmd(args: Namespace) -> None:
-    print('Running mycmd subcommand...')
+    print('Running mycmd subcommand with n={}...'.format(args.number))
     print('mycmd completed')
 
 
