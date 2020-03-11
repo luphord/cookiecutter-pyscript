@@ -2,7 +2,7 @@
 
 echo 'executing cookiecutter in temp dir...'
 tmp_dir=$(mktemp -d -t XXXXXXXXXX)
-cookiecutter -o $tmp_dir --replay .
+cookiecutter -o $tmp_dir --no-input . project_name='My Awesome Test Project'
 project_dir=$tmp_dir/$(ls $tmp_dir)
 
 echo
