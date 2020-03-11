@@ -15,6 +15,14 @@ export PRINT_HELP_PYSCRIPT
 help:
 	@python3 -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
+venv: ## create a virtual environment
+	python3 -m venv .venv
+	( \
+		. .venv/bin/activate; \
+		pip3 install -e .; \
+		pip3 install -r dev_requirements.txt; \
+	)
+
 clean: clean-build clean-pyc ## remove all build, test, coverage and Python artifacts
 
 clean-build: ## remove build artifacts
