@@ -29,3 +29,10 @@ make dist
 echo
 echo 'trying a test run of cli...'
 make cli
+
+echo 
+echo 'printing README...'
+cat $project_dir/README.md
+
+echo 
+echo "project dir is $project_dir"
