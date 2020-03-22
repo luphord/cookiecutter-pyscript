@@ -42,7 +42,7 @@ lint: ## check style with flake8
 	flake8 {{cookiecutter.project_slug}}.py tests
 
 test: ## run tests quickly with the default Python
-	python3 -m unittest discover tests
+	python3 -m unittest discover tests -v
 
 release: clean lint test dist ## package and upload a release
 	twine check dist/*
