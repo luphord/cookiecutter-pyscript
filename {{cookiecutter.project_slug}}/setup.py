@@ -53,6 +53,7 @@ setup(
 {%- endif %}
     long_description=readme + '\n\n' + history,
     include_package_data=True,
+    data_files=[('.', ['LICENSE', 'HISTORY.md'])],
     keywords='{{cookiecutter.project_slug}}',
     name='{{cookiecutter.project_slug}}',
     py_modules=['{{cookiecutter.project_slug}}'],
