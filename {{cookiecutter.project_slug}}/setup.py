@@ -52,6 +52,7 @@ setup(
     license='{{cookiecutter.open_source_license}}',
 {%- endif %}
     long_description=readme + '\n\n' + history,
+    long_description_content_type='text/markdown',
     include_package_data=True,
     data_files=[('.', ['LICENSE', 'HISTORY.md'])],
     keywords='{{cookiecutter.project_slug}}',
