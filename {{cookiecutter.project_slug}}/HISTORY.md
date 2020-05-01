@@ -1,5 +1,5 @@
-# History
+## History
 
-## {{cookiecutter.version}} ({% now 'local' %})
+### {{cookiecutter.version}} ({% now 'local' %})
 
 * Initial release.
