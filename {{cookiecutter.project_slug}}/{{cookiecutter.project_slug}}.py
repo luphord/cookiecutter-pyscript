@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''{{cookiecutter.project_name}} - {{cookiecutter.project_short_description}}
+'''{{cookiecutter.project_short_description}}
 '''
 
 __author__ = '''{{cookiecutter.full_name}}'''
@@ -11,7 +11,7 @@ __version__ = '''{{cookiecutter.version}}'''
 
 from argparse import ArgumentParser, Namespace
 
-parser = ArgumentParser(description='''{{cookiecutter.project_short_description}}''')
+parser = ArgumentParser(description=__doc__)
 parser.add_argument('--version',
                     help='Print version number',
                     default=False,
