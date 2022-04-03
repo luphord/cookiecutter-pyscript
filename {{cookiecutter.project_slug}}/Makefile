@@ -40,6 +40,10 @@ clean-pyc: ## remove Python file artifacts
 
 lint: ## check style with flake8
 	flake8 {{cookiecutter.project_slug}}.py tests
+	black --check .
+
+format:
+	black .
 
 test: ## run tests quickly with the default Python
 	python3 -m unittest discover tests -v

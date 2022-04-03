@@ -18,6 +18,10 @@ make venv
 . .venv/bin/activate
 
 echo
+echo 'reformatting code...'
+make format
+
+echo
 echo 'runing linter and tests...'
 make lint test
 
