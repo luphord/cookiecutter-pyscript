@@ -1,7 +1,7 @@
 # {{cookiecutter.project_name}}
 
 [![PyPI package](https://img.shields.io/pypi/v/{{cookiecutter.project_slug}})](https://pypi.python.org/pypi/{{cookiecutter.project_slug}})
-[![Build status](https://travis-ci.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}})](https://travis-ci.com/github/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}})
+[![Build status](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/actions/workflows/lint-test.yml/badge.svg)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/actions)
 
 {{cookiecutter.project_short_description}}
 
